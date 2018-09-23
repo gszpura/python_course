@@ -1,0 +1,30 @@
+Sep 19 16:57:10 gandalf systemd[1]: Starting Network Manager Script Dispatcher Service...
+Sep 19 16:57:10 gandalf dbus[1060]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Sep 19 16:57:10 gandalf systemd[1]: Started Network Manager Script Dispatcher Service.
+Sep 19 16:57:10 gandalf nm-dispatcher: req:1 'dhcp4-change' [wlp2s0]: new request (1 scripts)
+Sep 19 16:57:10 gandalf nm-dispatcher: req:1 'dhcp4-change' [wlp2s0]: start running ordered scripts...
+Sep 19 16:57:10 gandalf dhclient[2309]: bound to 192.168.0.178 -- renewal in 1484 seconds.
+Sep 19 17:11:32 gandalf kernel: [25162.309295] pcieport 0000:00:1c.4: AER: Corrected error received: id=00e4
+Sep 19 17:11:32 gandalf kernel: [25162.309314] pcieport 0000:00:1c.4: PCIe Bus Error: severity=Corrected, type=Physical Layer, id=00e4(Receiver ID)
+Sep 19 17:11:32 gandalf kernel: [25162.309328] pcieport 0000:00:1c.4:   device [8086:9d14] error status/mask=00000001/00002000
+Sep 19 17:11:32 gandalf kernel: [25162.309336] pcieport 0000:00:1c.4:    [ 0] Receiver Error         (First)
+Sep 19 17:17:01 gandalf CRON[8756]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep 19 17:21:54 gandalf dhclient[2309]: DHCPREQUEST of 192.168.0.178 on wlp2s0 to 192.168.0.1 port 67 (xid=0x46c437f)
+Sep 19 17:21:55 gandalf dhclient[2309]: DHCPACK of 192.168.0.178 from 192.168.0.1
+Sep 19 17:21:55 gandalf NetworkManager[1112]: <info>  [1537370515.0073]   address 192.168.0.178
+Sep 19 17:21:55 gandalf NetworkManager[1112]: <info>  [1537370515.0073]   plen 24 (255.255.255.0)
+Sep 19 17:21:55 gandalf NetworkManager[1112]: <info>  [1537370515.0073]   gateway 192.168.0.1
+Sep 19 17:21:55 gandalf NetworkManager[1112]: <info>  [1537370515.0073]   server identifier 192.168.0.1
+Sep 19 17:21:55 gandalf NetworkManager[1112]: <info>  [1537370515.0073]   lease time 3600
+Sep 19 17:21:55 gandalf NetworkManager[1112]: <info>  [1537370515.0073]   hostname 'gandalf'
+Sep 19 17:21:55 gandalf NetworkManager[1112]: <info>  [1537370515.0073]   nameserver '62.179.1.60'
+Sep 19 17:21:55 gandalf NetworkManager[1112]: <info>  [1537370515.0073]   nameserver '62.179.1.61'
+Sep 19 17:21:55 gandalf NetworkManager[1112]: <info>  [1537370515.0074]   domain name 'home'
+Sep 19 17:21:55 gandalf NetworkManager[1112]: <info>  [1537370515.0074] dhcp4 (wlp2s0): state changed bound -> bound
+Sep 19 17:21:55 gandalf dbus[1060]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'
+Sep 19 17:21:55 gandalf systemd[1]: Starting Network Manager Script Dispatcher Service...
+Sep 19 17:21:55 gandalf dbus[1060]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Sep 19 17:21:55 gandalf systemd[1]: Started Network Manager Script Dispatcher Service.
+Sep 19 17:21:55 gandalf nm-dispatcher: req:1 'dhcp4-change' [wlp2s0]: new request (1 scripts)
+Sep 19 17:21:55 gandalf nm-dispatcher: req:1 'dhcp4-change' [wlp2s0]: start running ordered scripts...
+Sep 19 17:21:55 gandalf dhclient[2309]: bound to 192.168.0.178 -- renewal in 1522 seconds.
