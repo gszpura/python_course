@@ -1,0 +1,31 @@
+from PIL import Image
+
+def load():
+    with Image.open("car.png") as im:
+        return list(im.getdata()), im.size
+
+
+def rotate(data):
+    return data[::-1]
+
+
+def restore_contrast(data):
+    a, b = 4, 0
+    return [tuple(map(lambda x: int(a*x+b), i)) for i in data]
+
+
+def channel_crop(data):
+    return [(250, i[1], 0) for i in data]
+
+
+def save(list_of_rgb_values, size):
+    im2 = Image.new('RGB', size)
+    im2.putdata(list_of_rgb_values)
+    im2.save("car2.png", "PNG")
+
+
+data, size = load()
+data = rotate(data)
+data = restore_contrast(data)
+data = channel_crop(data)
+save(data, size)
