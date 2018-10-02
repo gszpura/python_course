@@ -15,5 +15,5 @@ def next_cubes(n):
 if __name__ == '__main__':
     res = next_cubes(1000000)
     next(res)
-    print memory_usage()
+    print(memory_usage())
 
