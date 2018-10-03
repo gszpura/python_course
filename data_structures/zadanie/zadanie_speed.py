@@ -16,10 +16,7 @@ def is_anagram_defaultdict(first, second):
         fres[i] += 1
     for j in second:
         sres[j] += 1
-    for i in fres:
-        if fres[i] != sres[i]:
-            return False
-    return len(first) == len(second)
+    return fres == sres 
 
 
 def is_anagram_counter(first, second):
